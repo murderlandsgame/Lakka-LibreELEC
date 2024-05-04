@@ -17,6 +17,5 @@ jobs:
       run: |
         useradd bren;
         su bren;
-        make -j666;
         ./build_all.sh;
         
