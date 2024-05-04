@@ -15,7 +15,6 @@ jobs:
 
     - name: make 
       run: |
-        useradd bren;
-        su bren;
-        ./build_all.sh;
+        exit
+        make
         
