@@ -1,0 +1,22 @@
+name: C/C++ CI
+
+on:
+  workflow_dispatch:
+  
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    container: devkitpro/devkita64:latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+
+    - name: dependencies
+      run: echo start
+    - name: cmake
+      run: cmake -DCMAKE_TOOLCHAIN_FILE=/opt/devkitpro/cmake/switch.cmake
+    - name: make 
+      run: make
