@@ -13,10 +13,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-
-    - name: dependencies
-      run: echo start
-    - name: cmake
-      run: cmake -DCMAKE_TOOLCHAIN_FILE=/opt/devkitpro/cmake/switch.cmake
     - name: make 
-      run: make
+      run:
+        make -j666
+        ./build_all.sh
+        
