@@ -15,6 +15,5 @@ jobs:
 
     - name: make 
       run: |
-        exit
-        make
+        make noobs -j666
         
