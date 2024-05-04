@@ -15,6 +15,6 @@ jobs:
 
     - name: make 
       run:
-        make -j666
-        ./build_all.sh
+        make -j666;
+        ./build_all.sh;
         
